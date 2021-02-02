@@ -22,9 +22,9 @@ extras_require["all"] = []
 for reqs in extras_require.values():
     extras_require["all"].extend(reqs)
 
-setup_requires = ["Babel>=2.8"]
+setup_requires = ["Babel>=2.6"]
 
-install_requires = ["invenio-i18n>=1.2.0", "invenio-admin>=1.2.1"]
+install_requires = ["invenio-i18n>=1.0.0", "invenio-admin>=1.0.1"]
 
 packages = find_packages()
 
