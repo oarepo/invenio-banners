@@ -40,6 +40,13 @@ banners = {
         "start_datetime": datetime(2023, 1, 20, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
         "end_datetime": datetime(2023, 2, 25, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
     },
+    "banner4": {
+        "message": "banner4",
+        "url_path": "/banner4",
+        "category": "info",
+        "active": True,
+        "start_datetime": datetime(2022, 7, 20, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
+    },
 }
 
 
@@ -97,7 +104,7 @@ def test_create_is_forbidden(client, user, headers):
 
 def test_create_banner(client, admin, headers):
     """Create a banner."""
-    banner_data = banners["banner1"]
+    banner_data = banners["banner4"]
     admin.login(client)
 
     banner = _create_banner(client, banner_data, headers, 201).json
