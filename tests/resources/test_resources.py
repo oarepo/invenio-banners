@@ -19,24 +19,26 @@ banners = {
         "url_path": "/banner1",
         "category": "info",
         "active": True,
-        "start_datetime": date(2022, 7, 20),
-        "end_datetime": date(2023, 1, 29),
+        "start_datetime": datetime(2022, 7, 20, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
+        "end_datetime": datetime(2023, 1, 29).strftime("%Y-%m-%d %H:%M:%S"),
     },
     "banner2": {
         "message": "banner2",
         "url_path": "/banner2",
         "category": "other",
         "active": False,
-        "start_datetime": date(2022, 12, 15),
-        "end_datetime": date(2023, 1, 5),
+        "start_datetime": datetime(2022, 12, 15, 20, 0, 0).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        ),
+        "end_datetime": datetime(2023, 1, 5, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
     },
     "banner3": {
         "message": "banner3",
         "url_path": "/banner3",
         "category": "warning",
         "active": True,
-        "start_datetime": date(2023, 1, 20),
-        "end_datetime": date(2023, 2, 25),
+        "start_datetime": datetime(2023, 1, 20, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
+        "end_datetime": datetime(2023, 2, 25, 20, 0, 0).strftime("%Y-%m-%d %H:%M:%S"),
     },
 }
 
